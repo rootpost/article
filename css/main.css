@@ -1,0 +1,36 @@
+﻿body
+  {
+    margin: 0;
+    background-color: #E9E9E9;
+    font-family: verdana;
+  }
+  
+.wrapAdd
+  {
+    display: inline-table;
+    float: left;
+    margin: 22px;
+    padding: 8px;
+    width: 500px;
+    font-size: 13pt;
+    border: 1px solid gray;
+  }
+  
+.wrapView
+  {
+    display: inline-table;
+    float: left;
+    margin: 22px;
+    padding: 8px;
+    width: 500px;
+    font-size: 13pt;
+    border: 1px solid gray;
+  }
+  
+input, select
+  {
+    font-size: 13pt;
+    font-weight: bold;
+    margin: 4px;
+    padding: 4px;
+  }
