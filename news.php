@@ -3,6 +3,10 @@ require "NewsDB.class.php";
 $news = new NewsDB();
 $errMsg = "";
 
+if($_SERVER["REQUEST_METHOD"] == "POST")
+  require "save_news.inc.php";
+if(isset($_GET["del"]))
+  require "delete_news.inc.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,11 +16,10 @@ $errMsg = "";
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
- <div class="wrapAdd">
   <h2>Просмотр и добавление статей</h2>
   <?php
     if($errMsg)
-      echo "<h3></h3>";
+      echo "<h3 style='color:red;'>$errMsg</h3>";
   ?>
   <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
     Заголовок статьи:<br />
@@ -38,9 +41,8 @@ $errMsg = "";
     <input type="submit" value="Добавить" /><br />
     
   </form>
- </div>
- <div class="wrapView">
-  
- </div>
+  <?php
+    require "get_news.inc.php";
+  ?>
 </body>
 </html>

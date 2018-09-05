@@ -1,7 +1,7 @@
 <?php
 interface INewsDB
 {
-  function saveNews($title, $category, $description, $source);
+  function saveNews($title, $category, $description, $source, $tagname);
   
   function getNews();
   

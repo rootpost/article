@@ -1,6 +1,6 @@
 ﻿body
   {
-    margin: 0;
+    margin: 4px;
     background-color: #E9E9E9;
     font-family: verdana;
   }
@@ -21,9 +21,9 @@
     display: inline-table;
     float: left;
     margin: 22px;
-    padding: 8px;
-    width: 500px;
-    font-size: 13pt;
+    padding: 4px;
+    width: 600px;
+    font-size: 11pt;
     border: 1px solid gray;
   }
   
@@ -33,4 +33,14 @@ input, select
     font-weight: bold;
     margin: 4px;
     padding: 4px;
+  }
+  
+  
+.post
+  {
+    display: inline-table;
+    width: 247px;
+    border: 1px solid white;
+    background-color: #D7D7D7;
+    padding 4px;
   }
